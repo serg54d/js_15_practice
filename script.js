@@ -43,6 +43,24 @@ for (let i = 0; i < 2; i++) {
     }
 }
 
+
+// i = 0;
+
+// while (i < 2) {
+//     const lastViewFilms = prompt('Последний просмотренный фильм?', ''),
+//     ratind = prompt('На сколько оцените его?', '');
+//     i++;
+
+//         if (lastViewFilms != null && ratind != null && lastViewFilms != '' && 
+//         ratind != '' && lastViewFilms.length < 50) {
+//             personalMovieDB.movies[lastViewFilms] = ratind;
+//             console.log('done');
+//     }   else {
+//           console.log('error');
+//           i--;
+//     }
+// }
+
 if (personalMovieDB.count < 10) {
     console.log("Просмотрено довольно мало фильмов");
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
