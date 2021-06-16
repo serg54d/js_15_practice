@@ -33,7 +33,16 @@ for (let i = 0; i < 2; i++) {
     const lastViewFilms = prompt('Последний просмотренный фильм?', ''),
           ratind = prompt('На сколько оцените его?', '');
 
-    personalMovieDB.movies[lastViewFilms] = ratind;
+    if (lastViewFilms != null && ratind != null && lastViewFilms != '' && 
+    ratind != '' && lastViewFilms.length < 50) {
+        personalMovieDB.movies[lastViewFilms] = ratind;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
+
+    
 }
 
 console.log(personalMovieDB);
